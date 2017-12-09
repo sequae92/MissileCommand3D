@@ -46,6 +46,24 @@
     // DOM element.
     container.appendChild(renderer.domElement);
 
+    // text for Missile Command
+
+    var loader = new THREE.FontLoader();
+
+	loader.load( './fonts/helvetiker_regular.typeface.json', function ( font ) {
+
+	var geometry = new THREE.TextGeometry( 'MISSILE COMMAND 3D', {
+		font: font,
+		size: 80,
+		height: 5,
+		curveSegments: 12,
+		bevelEnabled: true,
+		bevelThickness: 10,
+		bevelSize: 8,
+		bevelSegments: 5
+	} );
+	} );
+
 /*
     // create a point light
     const pointLight =
@@ -92,7 +110,7 @@
 	stoneTexture.repeat.set( 4, 4 ); 
 	stoneTexture.needsUpdate = true;
 
-	var geometry = new THREE.PlaneGeometry( 150, 150, 10, 10);
+	var geometry = new THREE.PlaneGeometry( 250, 250, 10, 10);
 	var material = new THREE.MeshBasicMaterial( {side: THREE.DoubleSide, map: stoneTexture} );
 	var plane = new THREE.Mesh( geometry, material );
 	
