@@ -165,24 +165,27 @@
 	scene.add(building4);
 
     // Load the background texture
-    var texture = THREE.ImageUtils.loadTexture( '1.jpg' );
+    var bckgTexture = new THREE.TextureLoader().load( 'https://raw.githubusercontent.com/sequae92/MissileCommand3D/master/assets/skystarstexture.jpg' );
     var backgroundMesh = new THREE.Mesh(
         new THREE.PlaneGeometry(2, 2, 0),
         new THREE.MeshBasicMaterial({
-            map: texture
+            map: bckgTexture
         }));
 
-    backgroundMesh .material.depthTest = false;
-    backgroundMesh .material.depthWrite = false;
+    backgroundMesh.material.depthTest = false;
+    backgroundMesh.material.depthWrite = false;
 
     // Create your background scene
     var backgroundScene = new THREE.Scene();
     var backgroundCamera = new THREE.Camera();
-    backgroundScene .add(backgroundCamera );
-    backgroundScene .add(backgroundMesh );
+    backgroundScene.add(backgroundCamera);
+    backgroundScene.add(backgroundMesh);
 
     function update () {
       // Draw!
+      renderer.autoClear = false;
+      renderer.clear();
+      renderer.render(backgroundScene , backgroundCamera );
       renderer.render(scene, camera);
 
       // Schedule the next frame.
