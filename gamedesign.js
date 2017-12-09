@@ -50,7 +50,7 @@
 
     var loader = new THREE.FontLoader();
 
-	loader.load( './fonts/helvetiker_regular.typeface.json', function ( font ) {
+	loader.load( 'https://raw.githubusercontent.com/sequae92/MissileCommand3D/master/fonts/helvetiker_bold.typeface.json', function ( font ) {
 
 	var geometry = new THREE.TextGeometry( 'MISSILE COMMAND 3D', {
 		font: font,
