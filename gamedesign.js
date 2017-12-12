@@ -134,42 +134,70 @@
 	scene.add(object);
 */
 
-	var buildingGeometry = new THREE.BoxGeometry( 20, 40, 50 );
+	var buildingGeometry = new THREE.BoxGeometry( 15, 40, 50 );
 	var buildingMaterial = new THREE.MeshBasicMaterial( {side: THREE.DoubleSide, map: buildingTexture} );
 	var building1 = new THREE.Mesh( buildingGeometry, buildingMaterial );
 
 	building1.position.z = -300;
 	building1.position.y = -35;
-	building1.position.x = -75;
+	building1.position.x = -50;
 	scene.add(building1);
 
 	var building2 = new THREE.Mesh( buildingGeometry, buildingMaterial );
 
 	building2.position.z = -300;
 	building2.position.y = -35;
-	building2.position.x = -35;
+	building2.position.x = -25;
 	scene.add(building2);
 
 	var building3 = new THREE.Mesh( buildingGeometry, buildingMaterial );
 
 	building3.position.z = -300;
 	building3.position.y = -35;
-	building3.position.x = 5;
+	building3.position.x = 0;
 	scene.add(building3);
 
 	var building4 = new THREE.Mesh( buildingGeometry, buildingMaterial );
 
 	building4.position.z = -300;
 	building4.position.y = -35;
-	building4.position.x =  45;
+	building4.position.x =  25;
 	scene.add(building4);
 
     var building5 = new THREE.Mesh( buildingGeometry, buildingMaterial );
 
     building5.position.z = -300;
     building5.position.y = -35;
-    building5.position.x =  80;
+    building5.position.x =  50;
     scene.add(building5);
+
+    //defining the missile base texture
+
+    var missileBaseTexture = new THREE.TextureLoader().load( 'https://raw.githubusercontent.com/sequae92/MissileCommand3D/master/assets/BuildingTexture.jpg' );
+    // assuming you want the texture to repeat in both directions:
+    missileBaseTexture.wrapS = THREE.RepeatWrapping; 
+    missileBaseTexture.wrapT = THREE.RepeatWrapping;
+
+    // how many times to repeat in each direction; the default is (1,1),
+    missileBaseTexture.repeat.set( 4, 4 ); 
+    missileBaseTexture.needsUpdate = true;
+
+    var missileBaseGeometry = new THREE.BoxGeometry( 20, 50, 50 );
+    var missileBaseMaterial = new THREE.MeshBasicMaterial( {side: THREE.DoubleSide, map: missileBaseTexture} );
+    
+    var missileBase1 = new THREE.Mesh( missileBaseGeometry, missileBaseMaterial );
+
+    missileBase1.position.z = -300;
+    missileBase1.position.y = -35;
+    missileBase1.position.x = -85;
+    scene.add(missileBase1);
+
+    var missileBase2 = new THREE.Mesh( missileBaseGeometry, missileBaseMaterial );
+
+    missileBase2.position.z = -300;
+    missileBase2.position.y = -35;
+    missileBase2.position.x = 85;
+    scene.add(missileBase2);
 
     // Load the background texture
     var bckgTexture = new THREE.TextureLoader().load( 'https://raw.githubusercontent.com/sequae92/MissileCommand3D/master/assets/skystarstexture2.jpg' );
