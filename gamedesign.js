@@ -140,32 +140,39 @@
 
 	building1.position.z = -300;
 	building1.position.y = -35;
-	building1.position.x = -55;
+	building1.position.x = -75;
 	scene.add(building1);
 
 	var building2 = new THREE.Mesh( buildingGeometry, buildingMaterial );
 
 	building2.position.z = -300;
 	building2.position.y = -35;
-	building2.position.x = -15;
+	building2.position.x = -35;
 	scene.add(building2);
 
 	var building3 = new THREE.Mesh( buildingGeometry, buildingMaterial );
 
 	building3.position.z = -300;
 	building3.position.y = -35;
-	building3.position.x = 15;
+	building3.position.x = 5;
 	scene.add(building3);
 
 	var building4 = new THREE.Mesh( buildingGeometry, buildingMaterial );
 
 	building4.position.z = -300;
 	building4.position.y = -35;
-	building4.position.x =  55;
+	building4.position.x =  45;
 	scene.add(building4);
 
+    var building5 = new THREE.Mesh( buildingGeometry, buildingMaterial );
+
+    building5.position.z = -300;
+    building5.position.y = -35;
+    building5.position.x =  80;
+    scene.add(building5);
+
     // Load the background texture
-    var bckgTexture = new THREE.TextureLoader().load( 'https://raw.githubusercontent.com/sequae92/MissileCommand3D/master/assets/skystarstexture.jpg' );
+    var bckgTexture = new THREE.TextureLoader().load( 'https://raw.githubusercontent.com/sequae92/MissileCommand3D/master/assets/skystarstexture2.jpg' );
     var backgroundMesh = new THREE.Mesh(
         new THREE.PlaneGeometry(2, 2, 0),
         new THREE.MeshBasicMaterial({
