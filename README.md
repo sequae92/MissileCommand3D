@@ -1,9 +1,5 @@
 
-CSC 561 Assignment 4 
-SPONDON KUNDU (skundu)
-=======================================================================
-# MissileCommand3D
-3D Version of Missile Command
+MissileCommand3D
 ========================================================================
 The following files are included as part of this project
 
