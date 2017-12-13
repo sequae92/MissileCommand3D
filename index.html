@@ -3,6 +3,21 @@
   <head>
     <meta charset="UTF-8">
     <title>Prog 4: 3D Game: Missile Command</title>
+    <style type="text/css">
+    #scores {
+        font-size:130%; 
+        padding:0; 
+        margin:0;
+        color: red;
+      }
+    #level {
+        font-size:130%; 
+        padding:0; 
+        margin:0;
+        color: black;
+      }
+
+  </style>
   </head>
 
   <body onload='main()'>
@@ -10,8 +25,9 @@
      <div id="container"></div>
       <script type="text/javascript" src="./assets/three.js"></script>
       <script type="text/javascript" src="gamedesign.js"></script>
-     <!--  <script>
-        init();
-      </script> -->
+      <div>
+        <h3 id='scores'>Score:0</h3>
+        <h3 id='level'>Level:1</h3>
+      </div>
   </body>
 </html>
