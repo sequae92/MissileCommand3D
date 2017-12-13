@@ -40,7 +40,7 @@ function init() {
     const NEAR = 0.1;
     const FAR = 10000;
 
-    dSTEP = 0.3; // essentially the refresh rate - for the ballistic missile
+    dSTEP = 0.2; // essentially the refresh rate - for the ballistic missile
     aSTEP = 0.4; // refresh rate for the anti-ballistic missile
     totalMissilesRound = 40;
 
@@ -523,7 +523,7 @@ function init() {
 
     function nextLevel(){
 
-        dSTEP+=0.2;
+        dSTEP+=0.1;
         missileCount = 0;
         //score = 0;
         currentLevel+=1;
