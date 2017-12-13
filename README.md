@@ -6,9 +6,13 @@ SPONDON KUNDU (skundu)
 3D Version of Missile Command
 ========================================================================
 The following files are included as part of this project
+
 1. index.html
+
 2. gamedesign.js
+
 3. assets(folder)
+
 4. fonts(folder)
 
 All the assets as in the mp3 sounds and the images for texture are stored in the assets folder
@@ -19,16 +23,23 @@ On opening the index html you can operate on the rendering with the necessary in
 The parts completed as part of this assignment are as follows:
 
 Part 1: Display the field and sky
+
 Part 2: Display and animate descending missiles.
+
 Part 3: Display and animate ascending missiles
+
 Part 4: Add interaction with descending missiles
 
 Extra Credit completed:
 
 1.Animate missile-missile and missile-city/battery explosions.
+
 2.Add periodic spaceships flying through as unusual targets players can shoot
+
 3.Track and display score. You can choose any scoring scale you want.
+
 4.When all descending missiles have been exploded or landed, a new level appears.
+
 5. Sound and music. On certain game events, e.g. game start, missile firing, explosions, etc. play a sound effect.
 
 
@@ -50,5 +61,5 @@ Github Link:
 https://github.com/sequae92/MissileCommand3D
 
 Contact: Spondon Kundu
-Spondon6102@gmail.com
+spondon6102@gmail.com
 
